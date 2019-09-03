@@ -18,15 +18,13 @@
     "@commitlint/config-conventional": "^8.1.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
-    "husky": "^3.0.5",
+    "husky": "^4.0.0-beta.1",
     "lint-staged": "^9.2.5",
     "typescript": "^3.6.2"
   },
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged",
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"prepare-commit-msg": "exec < dev/tty && ./node_modules/.bin/git-cz --hook || tgitstaturue"
-		}
-	}
+  "config": {
+	  "commitizen": {
+		"path": "cz-conventional-changelog"
+	  }
+  }
 }
