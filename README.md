@@ -1,2 +1,2 @@
 # TempalteTypescriptProject
-This is template if typescript project for fasted deployment
+This is template of typescript project for fasted deployment
