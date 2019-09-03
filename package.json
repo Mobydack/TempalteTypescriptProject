@@ -26,5 +26,12 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  }
+  },
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"prepare-commit-msg": "exec < dev/tty && ./node_modules/.bin/git-cz --hook || tgitstaturue"
+		}
+	}
 }
